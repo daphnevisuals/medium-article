@@ -1,0 +1,111 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BANNER */
+.header-banner {
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.46) 0%,
+      rgba(0, 0, 0, 0.4598433123249299) 35%,
+      rgba(0, 0, 0, 0.4626444327731093) 100%
+    ),
+    url("/medium-article/images/_DSF4923.jpg");
+  background-size: 100vw;
+  height: 300px;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content h1 {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.banner-content p {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Source Serif 4", serif;
+}
+
+/* CONTAINER FOR ARTICLE */
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  width: 1000px;
+}
+
+/* media q */
+/* 576px, 768px, 992px and 1200px */
+@media (max-width: 1200px) {
+  .container {
+    width: 900px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 300px;
+  }
+}
+
+.card {
+  padding: 20px 0;
+}
+
+.card h2 {
+  color: grey;
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.card p {
+  color: rgb(31, 31, 31);
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.card a {
+  color: rgb(139, 139, 139);
+  font-size: 18px;
+  font-family: "Source Serif 4", serif;
+  text-decoration: none;
+  background-color: rgba(192, 255, 192, 0.674);
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.card a:hover {
+  background: rgb(192, 255, 192);
+  background: linear-gradient(
+    90deg,
+    rgba(192, 255, 192, 0.44303658963585435) 0%,
+    rgba(141, 214, 134, 0.5130646008403361) 100%
+  );
+}
